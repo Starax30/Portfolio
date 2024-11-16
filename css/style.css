@@ -1,0 +1,33 @@
+#docker{
+
+   body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+  }
+  
+  .content {
+      position: relative;
+      z-index: 2;
+      padding: 20px;
+  }
+  
+  .watermark {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 1;
+      pointer-events: none; /* Hierdoor kun je niet op de watermerk klikken */
+      opacity: 0.1; /* Transparantie van het watermerk */
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      font-size: 5rem;
+      color: rgba(0, 0, 0, 0.2);
+      text-align: center;
+      line-height: 100vh; /* Verticaal centreren */
+      font-weight: bold;
+  }
+}  
+  

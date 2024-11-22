@@ -15,41 +15,34 @@
 <body  id="contact">
 
     <header>
-        <nav class="navbar bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary">
           <div class="container-fluid">
-            <a class="navbar-brand" href="index.html"><img src="assets/images/Novavirt.png" alt="Novavirt" width="90"></a>
-            <h5 class="display-6 fst-italic">Contactpagina</h5>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="index.html"><img class=" rounded-circle" src="assets/images/Novavirt.png" alt="Novavirt" width="90"></a>
+    
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-              <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-              </div>
-              <div class="offcanvas-body">
-                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Portfolio</a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="docker.html">Docker en Kubernetes</a></li>
-                      <li><a class="dropdown-item" href="yet-to-come1.html">Yet to come 1</a></li>
-                      <li><a class="dropdown-item" href="yet-to-come2.html">Yet to come 2</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                  </li>
-                </ul>
-              </div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item mx-4 ">
+                  <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown mx-4">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Portfolio</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="docker.html">Docker en Kubernetes</a></li>
+                    <li><a class="dropdown-item" href="yet-to-come1.html">Yet to come 1</a></li>
+                    <li><a class="dropdown-item" href="yet-to-come2.html">Yet to come 2</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item mx-4">
+                  <a class="nav-link active" href="contact.html">Contact</a>
+                </li>
+              </ul>
             </div>
           </div>
         </nav>
       </header>
-
     
     <div class="container">
         <div class="row">
@@ -83,7 +76,8 @@
                                 <textarea class="form-control" id="message" rows="4" placeholder="Schrijf hier uw bericht..." required></textarea>
                             </div>
                             <div class="col-12">
-                                <button type="submit" class="btn btn-primary">Verstuur bericht</button>
+                                <button type="submit" class="btn btn-primary" href="mail: novavirt-virtual@outlook.com">Verstuur bericht</button>
+                              </a>
                             </div>
                         </form>
                     </article>
@@ -95,9 +89,9 @@
                 <div>
                     <h4 class="fst-italic">Contactgegevens</h4>
                     <ul class="list-unstyled">
-                        <li><i class="bi bi-geo-alt-fill"></i> Adres: Antwerpsestraat 85, Edegem</li>
-                        <li><i class="bi bi-telephone-fill"></i> Telefoon: +32 491031075</li>
-                        <li><i class="bi bi-envelope-fill"></i> Email: novavirt.virtual@outlook.com</li>
+                        <li><i class="bi bi-geo-alt-fill"></i> Adres: 123 Straatnaam, Stad</li>
+                        <li><i class="bi bi-telephone-fill"></i> Telefoon: +32 123 45 67 89</li>
+                        <li><i class="bi bi-envelope-fill"></i> Email: info@novavirt.be</li>
                     </ul>
 
                     <h4 class="fst-italic">Social media</h4>
@@ -122,13 +116,29 @@
         </div>
     </div>
 
-    <footer>
-        <div class="container px-2">
-            <p class="text-center border-top pt-4 mt-4">© 2024 Novavirt. Alle rechten voorbehouden.</p>
+    <footer class="container py-5">
+        <div class="row d-flex justify-content-between">
+          <div class="col-md-6">
+            <h5>Over ons</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="link-secondary" href="#">Locatie</a></li>
+              <li><a class="link-secondary" href="privacy.html">Privacybeleid</a></li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <h5>Volg ons</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="link-secondary" href="https://www.mortsel.be/digipunt-borsbeek" target="_blank">Zora werkt</a></li>
+              <li><a class="link-secondary" href="https://be.linkedin.com/in/thierry-van-boxel-55902b20a" target="_blank">LinkedIn</a></li>
+            </ul>
+          </div>
         </div>
-    </footer>
-
+        <div class="container px-2">
+          <p class="text-center mt-4">© 2024 Novavirt. Alle rechten voorbehouden.</p>
+        </div>
+      </footer>
 </body>
 
 </html>
+
 

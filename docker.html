@@ -13,12 +13,10 @@
 </head>
 
 <body id="docker">
-
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary">
           <div class="container-fluid">
-            <a class="navbar-brand" href="index.html"><img class=" rounded-circle" src="assets/images/Novavirt.png" alt="Novavirt" width="90"></a>
-    
+            <a class="navbar-brand" href="index.html"><img class=" rounded-circle" src="assets/images/Novavirt.png" alt="het logo met naam Novavirt" width="90"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -43,7 +41,6 @@
           </div>
         </nav>
       </header>
-
     <div class="container">
         <div class="row">
             <main class="col-md-9 p-4">
@@ -56,7 +53,6 @@
                             </div>
                         </div>
                     </article>
-
                     <article class="shop-item col-12 col-sm-12 col-md-12">
                         <h4 class="text-body-emphasis fs-8 fw-bolder pt-3">Wat is het en waarom zou je het willen combineren?</h4>
                         <p class="h6 small lead">
@@ -64,156 +60,97 @@
                             Kubernetes start de containers op, zorgt voor load balans, failovers, routing van netwerkverkeer en upscaling/downscaling van alle resources. <br>
                             De sterkte van kubernetes is dat het ingrijpt als o.a een container vastloopt, het zorgd dan tijdelijk voor een andere container zodat er weinig of geen probleem merkbaar is. <br>
                             Wat kubernetes uniek maakt is dat het de menselijke factor als zwakste schakel uitschakelt. Stel dat je een paar honderd containers hebt draaien, Als je deze allemaal manueel zal beheren is een fout niet uit te sluiten. <br> Door deze processen volautomatisch te laten lopen kan je zulke fouten voorkomen, daarnaast zal het je ook veel tijd besparen.
-                            
                         </p>
                     </article>
-
                     <article class="shop-item col-12 col-sm-6 col-md-6">
                         <h4 class="text-body-emphasis fs-8 fw-bolder pt-3">Docker</h4>
                         <p class="h6 small lead">
                             <img src="assets/images/docker.png" alt="Docker logo" width="32" height="32" class="rounded-circle border border-white"><br><br>
                             Docker is software dat gemaakt is voor systeembeheerders en ontwikkelaars. <br> Het is een manier voor het ontwikkelen, verschepen en uitvoeren van software door het te beheren in een virtuele <br> Docker maakt gebruik van containerisatie-technologie die software gaat verpakken en isoleren waardoor de toepassing minder afhankelijk word van de host. <br> Het is dus betrouwbaarder, eenduidiger en kan eenvoudiger worden verscheept  en uitgevoerd op verschillende omgevingen. <br>
-                            Voor ontwikkelaars is dit een eenvoudige manier om applicaties te bouwen, distribueren en schalen ongeacht de host waar de container op draait. 
-                            
+                            Voor ontwikkelaars is dit een eenvoudige manier om applicaties te bouwen, distribueren en schalen ongeacht de host waar de container op draait.
                         </p>
                     </article>
-
                     <article class="shop-item col-12 col-sm-6 col-md-6">
                         <h4 class="text-body-emphasis fs-8 fw-bolder pt-3">Kubernetes</h4>
                         <p class="h6 small lead">
                             <img src="assets/images/kubernetes.png" alt="Kubernetes logo" width="32" height="32" class="rounded-circle border border-white"><br><br>
                             Kubernetes ook wel bekend als k8s is een Griekse benaming voor ‘stuurman’ van een schip. De software is tot stand gekomen bij google als een open-source systeem om grote groepen gecontaineriseerde applicaties te beheren. <br> Engineers hadden de software ontwikkeld omdat er dringend behoefte was aan het ondersteunen van de groeiende hyperscale infrastructuur. <br> De containers die op de hosts draaien worden beheerd vanuit één machine (meestal de server) die de containers gaat aansturen. <br>
                             Door van kubernetes een open-source te maken waren ze in staat om meer kennis te vergaren en zo de software verbeteren.
-
                         </p>
                     </article>
-
                     <article class="shop-item col-12 col-sm-12 col-md-12">
                         <h4 class="text-body-emphasis fs-8 fw-bolder pt-3">Hoe het project is opgezet</h4>
                         <p class="h6 small lead">
                             In dit project gaan we Docker, docker-compose en kubernetes installeren op nodes. <br>
-                             nodes zijn de besturingssystemen waar Docker gaat op draaien en beheerd worden met Kubernetes. <br> Dit kan Windows, Chrome, Mac of Linux (met of zonder grafische omgeving) zijn maar in dit project werken we met Linux. <br> In het project zijn 3 workernodes gemaakt waar Docker op geïnstalleerd word met de containers. <br>
+                            nodes zijn de besturingssystemen waar Docker gaat op draaien en beheerd worden met Kubernetes. <br> Dit kan Windows, Chrome, Mac of Linux (met of zonder grafische omgeving) zijn maar in dit project werken we met Linux. <br> In het project zijn 3 workernodes gemaakt waar Docker op geïnstalleerd word met de containers. <br>
                             Op de masternode zal Kubernetes draaien waaruit de containers bestuurd zullen worden en de containers in pods beheerd op de workernodes. <br><br>
                             De images van de Docker container gaan we op 2 verschillende manieren bekomen: <br>
 	                        <ul>
                                 <li>Door ze zelf te maken met een Dockerfile of docker compose</li>
                                 <li>Door ze te halen uit de repository</li>
                                 <li>Uit de eigen repository</li>
-                            </ul>
-                            
-                            
-                            
-                        	
-
-                            
+                            </ul>    
                         </p>
                     </article>
-
                 </section>
                 <div class="container px-2 " id="icon-grid">
                     <h2 class="pb-2"></h2>
-        
                     <div class="container">
-                        <p
-                            class="h4 d-block border-bottom border-gray-300 pb-3 mb-4">Meer over docker en kubernetes.</p>
+                        <p class="h4 d-block border-bottom border-gray-300 pb-3 mb-4">Meer over docker en kubernetes.</p>
         
                         <div class="posts row mx-lg-n2">
                             <div class="col-lg-4 px-lg-2 mb-5 post post-18376">
-        
-                                <a
-                                    class="card shadow shadow-lg_hover border-gray-300"
-                                    href="https://www.combell.com/nl/blog/wat-is-kubernetes/" target="_blank">
-                                    <img width="750" height="256"
-                                        src="https://www.combell.com/nl/blog/files/Kubernetes-3-750x256.jpg"
-                                        class="card-img-top wp-post-image"
-                                        alt="Wat is Kubernetes en waarom is het belangrijk voor jouw bedrijf?"
-                                        decoding="async"
-                                        sizes="(max-width: 750px) 100vw, 750px">
+                                <a class="card shadow shadow-lg_hover border-gray-300" href="https://www.combell.com/nl/blog/wat-is-kubernetes/" target="_blank">
+                                    <img width="750" height="256" src="https://www.combell.com/nl/blog/files/Kubernetes-3-750x256.jpg" class="card-img-top wp-post-image" alt="Wat is Kubernetes en waarom is het belangrijk voor jouw bedrijf?" decoding="async" sizes="(max-width: 750px) 100vw, 750px">
                                         <h6 class="text-center">Meer over Kubernetes</h6>
                                 </a>
-        
                             </div>
-        
                             <div
                                 class="col-lg-4 px-lg-2 mb-5 post post-22938">
-                                <a
-                                    class="card shadow shadow-lg_hover border-gray-300"
+                                <a class="card shadow shadow-lg_hover border-gray-300"
                                     href="https://www.combell.com/nl/blog/wat-is-docker/" target="_blank">
-                                
-                                    <img width="750" height="256"
-                                        src="assets/images/docker.webp"
-                                        class="card-img-top wp-post-image"
-                                        alt="Kubernetes of cloud hosting"
-                                        decoding="async"
-                                        sizes="(max-width: 750px) 100vw, 750px">
+                                    <img width="750" height="256" src="assets/images/docker.webp" class="card-img-top wp-post-image" alt="Meer over docker" decoding="async" sizes="(max-width: 750px) 100vw, 750px">
                                     <h6 class="text-center">Meer over Docker</h6>
                                 </a>
-        
                             </div>
                         </div>
-        
                     </div>
-        
                 </div>
-
             </main>
 
             <aside class="col-md-3">
                 <div>
                     <h4 class="fst-italic pt-5">Het project</h4>
                     <br>
-                    <a
-                        class="card shadow shadow-lg_hover border-gray-300"
+                    <a class="card shadow shadow-lg_hover border-gray-300"
                         href="documents/Docker and kubernetes project.docx">
-                        <img width="750" height="256"
-                            src="assets/images/dock_kuber.png"
-                            class="card-img-top wp-post-image"
-                            alt="RMDY video customer case"
-                            decoding="async"                                     
-                            sizes="(max-width: 750px) 100vw, 750px">
-                            <h6 class="text-center">Projectdocument</h6>
-
+                        <img width="750" height="256" src="assets/images/dock_kuber.png" class="card-img-top wp-post-image" alt="docker en kubernetes afbeelding" decoding="async" sizes="(max-width: 750px) 100vw, 750px">
+                        <h6 class="text-center">Projectdocument</h6>
                     </a>
                 </div>
                         <br>
-                        <a
-                            class="card shadow shadow-lg border-gray-300">
-                            <img width="750" height="256"
-                                src="assets/images/kube-kluster.jpg"
-                                class="card-img-top card-img-bottom wp-post-image"
-                                alt="het kubernetes-kluster"
+                        <a class="card shadow shadow-lg border-gray-300">
+                            <img width="750" height="256" src="assets/images/kube-kluster.jpg" class="card-img-top card-img-bottom wp-post-image" alt="het kubernetes-kluster"
                                 decoding="async"                                     
                                 sizes="(max-width: 750px) 100vw, 750px">    
                         </a>
-<br>
-<a
-class="card shadow shadow-lg_hover border-gray-300">
-<img width="750" height="256"
-    src="assets/images/pironman.webp"
-    class="card-img-top wp-post-image"
-    alt="RMDY video customer case"
-    decoding="async"                                     
-    sizes="(max-width: 750px) 100vw, 750px">
-    <h6 class="text-center">Node's</h6>
-</a>
-
-<h4 class="text-body-emphasis fs-8 fw-bolder pt-3">De node's die voorzien zijn van:</h4>
-<ul class="h6 small lead">
-  <li>Cool elementen</li>
-  <li>Raspberrypi 5</li>
-  <li>NVME M.2 SSD</li>
-  <li>USB HDMI Adapter</li>
-</ul>
-
+                        <br>
+                        <a class="card shadow shadow-lg_hover border-gray-300">
+                          <img width="750" height="256" src="assets/images/pironman.webp" class="card-img-top wp-post-image" alt="RMDY video customer case" decoding="async" sizes="(max-width: 750px) 100vw, 750px">
+                          <h6 class="text-center">Node's</h6>
+                        </a>
+                        <h4 class="text-body-emphasis fs-8 fw-bolder pt-3">De node's die voorzien zijn van:</h4>
+                        <ul class="h6 small lead">
+                          <li>Cool elementen</li>
+                          <li>Raspberrypi 5</li>
+                          <li>NVME M.2 SSD</li>
+                          <li>USB HDMI Adapter</li>
+                        </ul>
                     </div>
-
-
-
             </aside>
 
         </div>
-    </div>
-
+        </div>
         <footer class="container py-5">
             <hr class="featurette-divider">
             <div class="row d-flex justify-content-between">
@@ -236,8 +173,6 @@ class="card shadow shadow-lg_hover border-gray-300">
               <small class=" d-block mb-3 text-muted">&copy; 2024 Novavirt. Alle rechten voorbehouden.</small>
             </div>
           </footer>
-
-    </footer>
 
 </body>
 

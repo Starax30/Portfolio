@@ -40,5 +40,10 @@
     font-family: Arial, sans-serif;
     line-height: 1.6;
   }
-  
+
+  #contactlocation {
+    /* neem de volle breedte in van het parent element */
+    width: 100%;
+    height: 250px;
+}
 

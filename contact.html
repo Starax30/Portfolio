@@ -9,6 +9,13 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+    <script src="js/jscontact.js" defer></script>
   
 </head>
 
@@ -92,6 +99,11 @@
                         <li><i class="bi bi-envelope-fill"></i> Email: novavirt.virtual@outlook.com</li>
                     </ul>
     
+
+                    <section id="kaart" class="row">
+                      <div id="contactlocation" class="col-12 mb-3"></div>
+                    </section>
+
                     <h4 class="fst-italic">Social media</h4>
                     <div class="d-flex gap-3 p-2">
                         <a href="https://be.linkedin.com/in/thierry-van-boxel-55902b20a" target="_blank">
@@ -106,8 +118,6 @@
                         </a>
                     </div>
                 </div>
-
-                
 
             </aside>
         </div>
@@ -131,9 +141,7 @@
             </ul>
           </div>
         </div>
-        <div class="container px-2">
-          <p class="text-center mt-4">© 2024 Novavirt. Alle rechten voorbehouden.</p>
-        </div>
+        <p class="mt-4">© <span id="year"></span> Novavirt. Alle rechten voorbehouden.</p>
       </footer>
 </body>
 

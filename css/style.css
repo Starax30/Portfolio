@@ -18,22 +18,22 @@
       right: 0;
       bottom: 0;
       z-index: 1;
-      pointer-events: none; /* Hierdoor kun je niet op de watermerk klikken */
-      opacity: 0.1; /* Transparantie van het watermerk */
+      pointer-events: none; 
+      opacity: 0.1; 
       background-repeat: no-repeat;
       background-position: center;
       background-size: contain;
       font-size: 5rem;
       color: rgba(0, 0, 0, 0.2);
       text-align: center;
-      line-height: 100vh; /* Verticaal centreren */
+      line-height: 100vh; 
       font-weight: bold;
   }
 }  
 
 .navbar-nav .nav-link.active {
     font-weight: bold;
-    color: #0d6efd !important; /* Blauw oplichtende kleur */
+    color: #0d6efd !important; 
   }
  
   #privacy {
@@ -42,7 +42,6 @@
   }
 
   #contactlocation {
-    /* neem de volle breedte in van het parent element */
     width: 100%;
     height: 250px;
 }

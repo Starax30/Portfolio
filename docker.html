@@ -26,7 +26,7 @@
                   <a class="nav-link " aria-current="page" href="index.html"> 🏠 Home</a>
                 </li>
                 <li class="nav-item dropdown mx-4">
-                  <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> ⚙️ Portfolio</a>
+                  <a class="nav-link active dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false"> ⚙️ Portfolio</a>
                   <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="docker.html">Docker en Kubernetes</a></li>
                     <li><a class="dropdown-item" href="gestructureerdbekabelen.html">Gestructureerd bekabelen</a></li>
@@ -44,8 +44,10 @@
           </div>
         </nav>
       </header>
-    <section class="container">
-        <div class="row">
+
+
+    <div class="container">
+        <section class="row">
             <main class="col-md-9 p-4">
                 <section id="shopintro" class="row p-3">
                     <article class="col-12 mb-3">
@@ -96,79 +98,78 @@
                         </p>
                     </article>
                 </section>
-                <div class="container px-2 " id="icon-grid">
-                    <div class="container">
+                <section class="container">
                         <p class="h4 d-block border-bottom border-gray-300 pb-3 mb-4">Meer over docker en kubernetes.</p>
                         <section class="posts row mx-lg-n2">
-                            <figure class="col-lg-4 px-lg-2 mb-5">
-                                <a class="card shadow shadow-lg_hover border-gray-300" href="https://www.combell.com/nl/blog/wat-is-kubernetes/" target="_blank">
-                                    <img width="750" height="256" src="https://www.combell.com/nl/blog/files/Kubernetes-3-750x256.jpg" class="card-img-top card-img-bottom wp-post-image" alt="meer over kubernetes" sizes="100vw, 750px">
-
-                                </a>
-                            </figure>
-                            <figure
-                                class="col-lg-4 px-lg-2 mb-5 post post-22938">
-                                <a class="card shadow shadow-lg_hover border-gray-300"
-                                    href="https://www.combell.com/nl/blog/wat-is-docker/" target="_blank">
-                                    <img width="750" height="256" src="assets/images/docker.webp" class="card-img-top card-img-bottom wp-post-image" alt="Meer over docker" sizes="100vw, 750px">
-
-                                </a>
+                          <figure class="col-lg-4 px-lg-2 mb-5">
+                            <a class="card shadow shadow-lg_hover border-gray-300"
+                              href="https://www.combell.com/nl/blog/wat-is-docker/" target="_blank">
+                              <img width="750" height="256"
+                              src="assets/images/docker.webp"
+                              class="card-img-top card-img-bottom wp-post-image" alt="#"
+                                sizes="100vw, 750px">
+                            </a>
+                          </figure>
+                            <figure class="col-lg-4 px-lg-2 mb-5 post post-18376">
+                              <a class="card shadow shadow-lg_hover border-gray-300"
+                              href="https://www.combell.com/nl/blog/wat-is-kubernetes/" target="_blank">
+                                <img width="750" height="256"
+                                src="https://www.combell.com/nl/blog/files/Kubernetes-3-750x256.jpg"                                  class="card-img-top card-img-bottom wp-post-image" alt="#"
+                                  sizes="100vw, 750px">
+                              </a>
                             </figure>
                         </section>
-                    </div>
-                </div>
+                </section>
             </main>
 
             <aside class="col-md-3">
-                <div>
-                    <h4 class="fst-italic pt-5">Het project</h4>
-                    <br>
-                    <a class="card shadow shadow-lg_hover border-gray-300"
-                        href="documents/Docker and kubernetes project.docx">
-                        <img width="750" height="256" src="assets/images/dock_kuber.png" class="card-img-top wp-post-image" alt="docker en kubernetes afbeelding" decoding="async" sizes="(max-width: 750px) 100vw, 750px">
-                        <h6 class="text-center">Projectdocument</h6>
-                    </a>
-                </div>
-                        <br>
-                        <a class="card shadow shadow-lg border-gray-300">
-                            <img width="750" height="256" src="assets/images/cluster122.png" class="card-img-top card-img-bottom wp-post-image" alt="het kubernetes-kluster"
-                                decoding="async"                                     
-                                sizes="(max-width: 750px) 100vw, 750px">    
-                        </a>
-                        <br>
-                        <a class="card shadow shadow-lg_hover border-gray-300">
-                          <img width="750" height="256" src="assets/images/pironman.webp" class="card-img-top card-img-bottom wp-post-image" alt="RMDY video customer case" decoding="async" sizes="(max-width: 750px) 100vw, 750px">
-                        </a>
-                        <h4 class="text-body-emphasis fs-8 fw-bolder pt-3">De node's die voorzien zijn van:</h4>
-                        <ul class="h6 small lead list-unstyled">
-                          <li>Cool elementen</li>
-                          <li>Raspberrypi 5</li>
-                          <li>NVME M.2 SSD</li>
-                          <li>USB HDMI Adapter</li>
-                        </ul>
-                    </div>
-            </aside>
+                  <h4 class="fst-italic pt-5">Het project</h4>
+                  <br>
+                  <a class="card shadow shadow-lg_hover border-gray-300"
+                      href="documents/Docker and kubernetes project.docx">
+                      <img width="750" height="256" src="assets/images/dock_kuber.png" class="card-img-top wp-post-image" alt="docker en kubernetes afbeelding" decoding="async" sizes="(max-width: 750px) 100vw, 750px">
+                      <h6 class="text-center">Projectdocument</h6>
+                  </a>
+                      <br>
+                      <a class="card shadow shadow-lg border-gray-300">
+                          <img width="750" height="256" src="assets/images/cluster122.png" class="card-img-top card-img-bottom wp-post-image" alt="het kubernetes-kluster"
+                              decoding="async"                                     
+                              sizes="(max-width: 750px) 100vw, 750px">    
+                      </a>
+                      <br>
+                      <a class="card shadow shadow-lg_hover border-gray-300">
+                        <img width="750" height="256" src="assets/images/pironman.webp" class="card-img-top card-img-bottom wp-post-image" alt="RMDY video customer case" decoding="async" sizes="(max-width: 750px) 100vw, 750px">
+                      </a>
+                      <h4 class="text-body-emphasis fs-8 fw-bolder pt-3">De node's die voorzien zijn van:</h4>
+                      <ul class="h6 small lead list-unstyled">
+                        <li>Cool elementen</li>
+                        <li>Raspberrypi 5</li>
+                        <li>NVME M.2 SSD</li>
+                        <li>USB HDMI Adapter</li>
+                      </ul>
+          </aside>
+        </section>
+        </div>
 
-        </div>
-        </div>
+
         <footer class="container py-5">
             <hr class="featurette-divider">
-            <div class="row d-flex justify-content-between">
-              <div class="col-md-6">
+            <section class="row d-flex justify-content-between">
+              <ul class="col-md-6">
                 <h5>Over ons</h5>
                 <ul class="list-unstyled text-small">
                   <li><a class="link-secondary" href="#">Locatie</a></li>
                   <li><a class="link-secondary" href="privacy.html">Privacybeleid</a></li>
                 </ul>
-              </div>
-              <div class="col-md-6">
+              </ul>
+              <ul class="col-md-6">
                 <h5>Volg ons</h5>
                 <ul class="list-unstyled text-small">
                   <li><a class="link-secondary" href="https://www.mortsel.be/digipunt-borsbeek" target="_blank">Zora werkt</a></li>
                   <li><a class="link-secondary" href="https://be.linkedin.com/in/thierry-van-boxel-55902b20a" target="_blank">LinkedIn</a></li>
                 </ul>
-              </div>
-            </div>
+              </ul>
+            </section>
             <p class="mt-4">© <span id="year"></span> Novavirt. Alle rechten voorbehouden.</p>
           </footer>
 

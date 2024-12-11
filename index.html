@@ -12,7 +12,7 @@
 <script src="js/jsindex.js" defer></script>
 </head>
 
-<body id="homepagebackground">
+<div id="homepagebackground">
 
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary">
@@ -24,7 +24,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item mx-4">
-              <a class="nav-link active" aria-current="page" href="index.html">🏠 Home</a>
+              <a class="nav-link active" aria-current="page" href="index.html">🏠 Over</a>
             </li>
             <li class="nav-item dropdown mx-4">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> ⚙️ Portfolio</a>
@@ -46,11 +46,10 @@
     </nav>
   </header>
 
-  <main class=" container-fluid">
+  <div class="row">
+  <main class="col-md-9 py-3">
+    <section class="ps-4">
     <div class="row">
-      <div class="col-md-9">
-        <div class="container my-5 text-center">
-          <div class="row">
             <figure class="col-lg-4">
               <a href="https://cvoencora.stedelijkonderwijs.be/opleidingen/aanbod/aanvullende-algemene-vorming-aav" target="_blank">
                 <img class="rounded-circle mx-auto mb-3" src="assets/images/encoraimage.webp" alt="Encora opleiding" width="140" height="140">
@@ -78,7 +77,7 @@
 
           <div class="row featurette">
             <div class="col-md-7">
-              <h3 class="featurette-heading fw-normal lh-1">Thierry van Boxel</h3>
+              <h3 class="featurette-heading fw-normal text-center">Thierry van Boxel</h3>
               <p class="lead">Met ervaring in de IT-sector help ik organisaties in hun digitale transformatie. Mijn passie ligt in het ontwikkelen van innovatieve, efficiënte en schaalbare technologieoplossingen die bedrijven in staat stellen om voorop te blijven in een steeds veranderende digitale wereld. Ik streef ernaar om complexiteit te vereenvoudigen, zodat technologie geen obstakel is, maar juist een krachtig hulpmiddel om bedrijfsdoelen te bereiken.</p>
             </div>
             <div class="col-md-5">
@@ -90,8 +89,8 @@
 
           <div class="row featurette">
             <div class="col-md-7 order-md-2">
-              <h3 class="featurette-heading fw-normal lh-1">Studie Systeem & Netwerkbeheerder</h3>
-              <p class="lead">De studie van Systeem- en Netwerkbeheer richt zich op het ontwikkelen van vaardigheden en kennis om complexe IT-infrastructuren te beheren en beveiligen. Het curriculum omvat onder andere netwerkprotocollen, besturingssystemen, virtualisatie, cloud computing, en beveiligingsstrategieën.</p>
+              <h3 class="featurette-heading fw-normal text-center">Studie Systeem & Netwerkbeheerder</h3>
+              <p class="lead">De studie van Systeem en Netwerkbeheer richt zich op het ontwikkelen van vaardigheden en kennis om complexe IT-infrastructuren te beheren en beveiligen. Het curriculum omvat onder andere netwerkprotocollen, besturingssystemen, virtualisatie, cloud computing, en beveiligingsstrategieën.</p>
             </div>
             <div class="col-md-5 order-md-1">
               <img src="assets/images/virtual.jpg" alt="afbeelding van systeem en netwerkbeheer" class="rounded-circle" width="200" height="200">
@@ -102,7 +101,7 @@
 
           <div class="row featurette">
             <div class="col-md-7">
-              <h3 class="featurette-heading fw-normal lh-1">Expertise</h3>
+              <h3 class="featurette-heading fw-normal text-center">Expertise</h3>
               <p class="lead">Ervaring als teamleider en hygiënisch verantwoordelijke in de horeca heeft me waardevolle vaardigheden opgeleverd voor een verdere loopbaan in de IT-sector, zoals leiderschap, stressbestendigheid, en aandacht voor detail.</p>
             </div>
             <div class="col-md-5">
@@ -114,29 +113,29 @@
 
           <div class="row featurette">
             <div class="col-md-7 order-md-2">
-              <h3 class="featurette-heading fw-normal lh-1">Werken als Digihelper bij de gemeente Borsbeek</h3>
+              <h3 class="featurette-heading fw-normal text-center">Werken als Digihelper bij de gemeente Borsbeek</h3>
               <p class="lead">Tijdens deze ervaring ondersteunde ik inwoners met digitale uitdagingen, van het aanvragen van identiteitsdocumenten tot het instellen van veilige wachtwoorden en het geven van advies over online veiligheid.</p>    
             </div>
             <div class="col-md-5 order-md-1">
               <img src="assets/images/gipunt.png.webp" alt="afbeelding van digipunt" class="rounded-circle" width="200" height="200">
             </div>
           </div>
-
           <hr class="featurette-divider">
-
-        </div>
-      </div>
-      <aside class="col-md-3 my-3">
-        <h4 class="text-center">Meer over mezelf</h4>
-        <br>
-        <a class="card shadow shadow-lg_hover border-gray-300" href="documents/curriculum_vitae.pdf" >
-        <img height="256" src="assets/images/cv.jpg" class="card-img wp-post-image" alt="cv van thierry" >
-    </a>
-    </div>
-      </aside>
-    </div>
-
+        </section>
   </main>
+
+  <aside class="col-md-3 pt-3">
+    <h4 class="text-center">Meer over mezelf</h4>
+    <br>
+    <figure>
+    <a class="card shadow shadow-lg_hover border-gray-300" href="documents/curriculum_vitae.pdf" >
+    <img height="256" src="assets/images/cv.jpg" class="card-img wp-post-image" alt="cv van thierry" >
+</a>
+<figcaption class=" text-center">curriculum</figcaption>
+</figure>
+  </aside>
+</div>
+
 
   <footer class="container py-5">
     <div class="row d-flex justify-content-between">
@@ -159,5 +158,3 @@
 
 
   </footer>
-
-</main>

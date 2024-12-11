@@ -23,7 +23,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav ms-auto">
                 <li class="nav-item mx-4 ">
-                  <a class="nav-link " aria-current="page" href="index.html"> 🏠 Home</a>
+                  <a class="nav-link " aria-current="page" href="index.html"> 🏠 Over</a>
                 </li>
                 <li class="nav-item dropdown mx-4">
                   <a class="nav-link active dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false"> ⚙️ Portfolio</a>
@@ -46,10 +46,9 @@
       </header>
 
 
-    <div class="container">
-        <section class="row">
-            <main class="col-md-9 p-4">
-                <section id="shopintro" class="row p-3">
+      <div class="row">
+            <main class="row col-md-9">
+                <section class="row">
                     <article class="col-12 mb-3">
                         <div class="container my-2">
                             <div class="p-4 text-center bg-body-tertiary rounded-3">
@@ -67,7 +66,7 @@
                             Wat kubernetes uniek maakt is dat het de menselijke factor als zwakste schakel uitschakelt. Stel dat je een paar honderd containers hebt draaien, Als je deze allemaal manueel zal beheren is een fout niet uit te sluiten. <br> Door deze processen volautomatisch te laten lopen kan je zulke fouten voorkomen, daarnaast zal het je ook veel tijd besparen.
                         </p>
                     </article>
-                    <article class="shop-item col-12 col-sm-6 col-md-6">
+                    <article class="col-12 col-sm-6 col-md-6">
                         <h4 class="text-body-emphasis fs-8 fw-bolder pt-3">Docker</h4>
                         <p class="h6 small lead">
                             <img src="assets/images/docker.png" alt="Docker logo" width="32" height="32" class="rounded-circle border border-white"><br><br>
@@ -75,7 +74,7 @@
                             Voor ontwikkelaars is dit een eenvoudige manier om applicaties te bouwen, distribueren en schalen ongeacht de host waar de container op draait.
                         </p>
                     </article>
-                    <article class="shop-item col-12 col-sm-6 col-md-6">
+                    <article class="col-12 col-sm-6 col-md-6">
                         <h4 class="text-body-emphasis fs-8 fw-bolder pt-3">Kubernetes</h4>
                         <p class="h6 small lead">
                             <img src="assets/images/kubernetes.png" alt="Kubernetes logo" width="32" height="32" class="rounded-circle border border-white"><br><br>
@@ -83,7 +82,7 @@
                             Door van kubernetes een open-source te maken waren ze in staat om meer kennis te vergaren en zo de software verbeteren.
                         </p>
                     </article>
-                    <article class="shop-item col-12 col-sm-12 col-md-12">
+                    <article class="col-12 col-sm-12 col-md-12">
                         <h4 class="text-body-emphasis fs-8 fw-bolder pt-3">Hoe het project is opgezet</h4>
                         <p class="h6 small lead">
                             In dit project gaan we Docker, docker-compose en kubernetes installeren op nodes. <br>
@@ -98,34 +97,13 @@
                         </p>
                     </article>
                 </section>
-                <section class="container">
-                        <p class="h4 d-block border-bottom border-gray-300 pb-3 mb-4">Meer over docker en kubernetes.</p>
-                        <section class="posts row mx-lg-n2">
-                          <figure class="col-lg-4 px-lg-2 mb-5">
-                            <a class="card shadow shadow-lg_hover border-gray-300"
-                              href="https://www.combell.com/nl/blog/wat-is-docker/" target="_blank">
-                              <img width="750" height="256"
-                              src="assets/images/docker.webp"
-                              class="card-img-top card-img-bottom wp-post-image" alt="#"
-                                sizes="100vw, 750px">
-                            </a>
-                          </figure>
-                            <figure class="col-lg-4 px-lg-2 mb-5 ">
-                              <a class="card shadow shadow-lg_hover border-gray-300"
-                              href="https://www.combell.com/nl/blog/wat-is-kubernetes/" target="_blank">
-                                <img width="750" height="256"
-                                src="https://www.combell.com/nl/blog/files/Kubernetes-3-750x256.jpg"                                  class="card-img-top card-img-bottom wp-post-image" alt="#"
-                                  sizes="100vw, 750px">
-                              </a>
-                            </figure>
-                        </section>
-                </section>
+               
             </main>
 
             <aside class="col-md-3">
                   <h4 class="fst-italic pt-5">Het project</h4>
                   <br>
-                  <figure class="col- px-lg-2 mb-5 ">
+                  <figure class="px-lg-2 mb-5 ">
                     <a class="card shadow shadow-lg_hover border-gray-300"
                     href="documents/Docker and kubernetes project.docx" target="_blank">
                       <img width="750" height="256"
@@ -135,7 +113,7 @@
                     <figcaption class=" text-center">Projectdocument <i class="bi bi-box-arrow-down"></i> </i></figcaption>
                   </figure>
 
-                      <figure class="col- px-lg-2 mb-5 ">
+                      <figure class="px-lg-2 mb-5 ">
                        <a class="card shadow shadow-lg_hover border-gray-300">
                           <img width="750" height="256"
                           src="assets/images/cluster122.png" class="card-img-top card-img-bottom wp-post-image" alt="#"
@@ -145,21 +123,40 @@
                       </figure>
 
                       <br>
-                      <figure class="col- px-lg-2 mb-5 ">
+                      <figure class="px-lg-2 mb-5 ">
                           <img width="750" height="256"
                           src="assets/images/pironman.webp" class="card-img-top card-img-bottom wp-post-image" alt="#"
                             sizes="100vw, 750px">
-                            <figcaption class=" text-center">Node </figcaption>
+                            <figcaption class=" text-center">Node</figcaption>
+                            <h4 class="text-body-emphasis fs-8 fw-bolder pt-3">De node's die voorzien zijn van:</h4>
+                            <ul class="h6 small lead list-unstyled">
+                              <li>Cool elementen</li>
+                              <li>Raspberrypi 5</li>
+                              <li>NVME M.2 SSD</li>
+                              <li>USB HDMI Adapter</li>
+                            </ul>
                       </figure>
-                      <h4 class="text-body-emphasis fs-8 fw-bolder pt-3">De node's die voorzien zijn van:</h4>
-                      <ul class="h6 small lead list-unstyled">
-                        <li>Cool elementen</li>
-                        <li>Raspberrypi 5</li>
-                        <li>NVME M.2 SSD</li>
-                        <li>USB HDMI Adapter</li>
-                      </ul>
+
+                      <figure class="px-lg-2 mb-5 ">
+                        <a class="card shadow shadow-lg_hover border-gray-300"
+                        href="https://www.combell.com/nl/blog/wat-is-docker/" target="_blank">
+                          <img width="750" height="256"
+                          src="assets/images/docker.webp" class="card-img-top card-img-bottom wp-post-image" alt="pagina met meeer uitleg over docker"
+                            sizes="100vw, 750px">
+                        </a>
+                        <figcaption class=" text-center">Meer over docker</figcaption>
+                      </figure>
+
+                      <figure class="px-lg-2 mb-5 ">
+                        <a class="card shadow shadow-lg_hover border-gray-300"
+                        href="https://www.combell.com/nl/blog/wat-is-kubernetes/" target="_blank">
+                          <img width="750" height="256"
+                          src="https://www.combell.com/nl/blog/files/Kubernetes-3-750x256.jpg" class="card-img-top card-img-bottom wp-post-image" alt="pagina met meeer uitleg over kubernetes"
+                            sizes="100vw, 750px">
+                        </a>
+                        <figcaption class=" text-center">Meer over kubernetes</figcaption>
+                      </figure>
           </aside>
-        </section>
         </div>
 
 

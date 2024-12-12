@@ -28,12 +28,11 @@
                 <li class="nav-item dropdown mx-4">
                   <a class="nav-link active dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false"> ⚙️ Portfolio</a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="docker.html">Docker en Kubernetes</a></li>
-                    <li><a class="dropdown-item" href="gestructureerdbekabelen.html">Gestructureerd bekabelen</a></li>
-                    <li><a class="dropdown-item" href="yet-to-come3.html">Yet to come 3</a></li>
-                    <li><a class="dropdown-item" href="yet-to-come4.html">Yet to come 4</a></li>
-                    <li><a class="dropdown-item" href="yet-to-come5.html">Yet to come 5</a></li>
-                    <li><a class="dropdown-item" href="yet-to-come6.html">Yet to come 6</a></li>
+                    <li><a class="dropdown-item display-7" href="docker.html">Docker en
+                      Kubernetes</a></li>
+                  <li><a class="dropdown-item display-7"
+                      href="gestructureerdbekabelen.html">Gestructureerd
+                      bekabelen</a></li>
                   </ul>
                 </li>
                 <li class="nav-item mx-4">
@@ -60,45 +59,59 @@
 
                     <article class="container col-12 col-sm-12 col-md-12">
                         <h4 class="text-body-emphasis fs-8 fw-bolder pt-3">Wat is het en waarom zou je het willen combineren?</h4>
-                        <p class="h6 small lead">
+                        <h5 class="display-7">
                             kubernetes maakt orkestratie mogelijk, dit betekent een automatiseren en mannagment van containers. Eigen aan containers is dat het een autonoom stuk code bevat die zelden onveranderlijk zijn en kunnen binnen enkele seconden worden opgestart. (Manueel of autonoom) <br>
                             Kubernetes start de containers op, zorgt voor load balans, failovers, routing van netwerkverkeer en upscaling/downscaling van alle resources. <br>
                             De sterkte van kubernetes is dat het ingrijpt als o.a een container vastloopt, het zorgd dan tijdelijk voor een andere container zodat er weinig of geen probleem merkbaar is. <br>
                             Wat kubernetes uniek maakt is dat het de menselijke factor als zwakste schakel uitschakelt. Stel dat je een paar honderd containers hebt draaien, Als je deze allemaal manueel zal beheren is een fout niet uit te sluiten. <br> Door deze processen volautomatisch te laten lopen kan je zulke fouten voorkomen, daarnaast zal het je ook veel tijd besparen.
-                        </p>
+                        </h5>
                     </article>
 
                     <article class="col-12 col-sm-6 col-md-6">
                         <h4 class="text-body-emphasis fs-8 fw-bolder pt-3">Docker</h4>
-                        <p class="h6 small lead">
+                        <h5 class="display-7">
                             <img src="assets/images/docker.webp" alt="Docker logo" width="32" height="32" class="rounded-circle border border-white"><br><br>
                             Docker is software dat gemaakt is voor systeembeheerders en ontwikkelaars. <br> Het is een manier voor het ontwikkelen, verschepen en uitvoeren van software door het te beheren in een virtuele <br> Docker maakt gebruik van containerisatie-technologie die software gaat verpakken en isoleren waardoor de toepassing minder afhankelijk word van de host. <br> Het is dus betrouwbaarder, eenduidiger en kan eenvoudiger worden verscheept  en uitgevoerd op verschillende omgevingen. <br>
                             Voor ontwikkelaars is dit een eenvoudige manier om applicaties te bouwen, distribueren en schalen ongeacht de host waar de container op draait.
-                        </p>
+                        </h5>
                     </article>
 
                     <article class="col-12 col-sm-6 col-md-6">
                         <h4 class="text-body-emphasis fs-8 fw-bolder pt-3">Kubernetes</h4>
-                        <p class="h6 small lead">
+                        <h5 class="display-7">
                             <img src="assets/images/kubernetes.png" alt="Kubernetes logo" width="32" height="32" class="rounded-circle border border-white"><br><br>
                             Kubernetes ook wel bekend als k8s is een Griekse benaming voor ‘stuurman’ van een schip. De software is tot stand gekomen bij google als een open-source systeem om grote groepen gecontaineriseerde applicaties te beheren. <br> Engineers hadden de software ontwikkeld omdat er dringend behoefte was aan het ondersteunen van de groeiende hyperscale infrastructuur. <br> De containers die op de hosts draaien worden beheerd vanuit één machine (meestal de server) die de containers gaat aansturen. <br>
                             Door van kubernetes een open-source te maken waren ze in staat om meer kennis te vergaren en zo de software verbeteren.
-                        </p>
+                        </h5>
                     </article>
 
                     <article class="col-12 col-sm-12 col-md-12">
                         <h4 class="text-body-emphasis fs-8 fw-bolder pt-3">Hoe het project is opgezet</h4>
-                        <p class="h6 small lead">
-                            In dit project gaan we Docker, docker-compose en kubernetes installeren op nodes. <br>
-                            nodes zijn de besturingssystemen waar Docker gaat op draaien en beheerd worden met Kubernetes. <br> Dit kan Windows, Chrome, Mac of Linux (met of zonder grafische omgeving) zijn maar in dit project werken we met Linux. <br> In het project zijn 3 workernodes gemaakt waar Docker op geïnstalleerd word met de containers. <br>
-                            Op de masternode zal Kubernetes draaien waaruit de containers bestuurd zullen worden en de containers in pods beheerd op de workernodes. <br><br>
-                            De images van de Docker container gaan we op 2 verschillende manieren bekomen: <br>
-	                        <ul>
-                                <li>Door ze zelf te maken met een Dockerfile of docker compose</li>
-                                <li>Door ze te halen uit de repository</li>
-                                <li>Uit de eigen repository</li>
-                            </ul>    
-                        </p>
+                        <h5 class="display-7">
+                          In dit project gaan we Docker, docker-compose en Kubernetes installeren op nodes. <br>
+                          Nodes zijn de besturingssystemen waarop Docker draait en die beheerd worden met Kubernetes. <br>
+                          Dit kan Windows, Chrome, Mac of Linux (met of zonder grafische omgeving) zijn, maar in dit project werken we uitsluitend met Linux. <br>
+                          Linux biedt namelijk een stabiele en flexibele omgeving die ideaal is voor containerisatie en orkestratie. <br>
+                          In het project zijn drie workernodes opgezet waarop Docker geïnstalleerd wordt. Deze nodes draaien containers die de basis vormen van de gedistribueerde infrastructuur. <br>
+                          Daarnaast is er een masternode geconfigureerd, waar Kubernetes draait. <br>
+                          Deze masternode speelt een cruciale rol, omdat het de centrale hub is voor het beheren en coördineren van alle containers in pods op de workernodes. <br><br>
+                          De images van de Docker containers worden op twee verschillende manieren verkregen: <br>
+                          <ul>
+                              <li>Door ze zelf te bouwen met behulp van een Dockerfile of docker-compose. Dit geeft ons volledige controle over de configuratie en functionaliteit van de containers.</li>
+                              <li>Door ze te halen uit een publieke repository, zoals Docker Hub, die een breed scala aan vooraf geconfigureerde images biedt.</li>
+                              <li>Uit de eigen repository, wat handig is voor het hosten en beheren van interne of aangepaste images.</li>
+                          </ul>
+                          <br>
+                          Door gebruik te maken van deze methoden kunnen we een flexibele en schaalbare infrastructuur bouwen die zowel standaardoplossingen als maatwerk ondersteunt. <br>
+                          Dit project biedt niet alleen praktische ervaring met containerisatie, maar ook inzicht in hoe Kubernetes clusters worden ingezet om complexe applicaties te beheren. <br><br>
+                          Tijdens het project zullen we ook aandacht besteden aan monitoring en logging. <br>
+                          Tools zoals Prometheus en Grafana worden geïntegreerd om inzicht te krijgen in de prestaties en beschikbaarheid van de infrastructuur. <br>
+                          Daarnaast wordt de beveiliging van de containers en nodes behandeld, waarbij technieken zoals netwerksegmentatie en role-based access control (RBAC) worden toegepast. <br>
+                          Dit alles maakt het mogelijk om een robuuste en toekomstbestendige infrastructuur te bouwen die klaar is voor productiegebruik. <br>
+                          Tot slot zullen we bekijken hoe CI/CD-pipelines kunnen worden geïntegreerd met Kubernetes, zodat we geautomatiseerde implementaties kunnen realiseren. <br>
+                          Hiermee wordt een complete DevOps-workflow geïmplementeerd, van ontwikkeling tot productie. <br>
+                      </h5>
+                      
                     </article>
 
                 </section>
@@ -115,7 +128,7 @@
                       src="assets/images/dock_kuber.png" class="card-img-top card-img-bottom wp-post-image" alt="het projectdocument"
                         sizes="100vw, 750px">
                     </a>
-                    <figcaption class=" text-center">Projectdocument <i class="bi bi-box-arrow-down"></i> </i></figcaption>
+                    <figcaption class=" text-center display-7">Projectdocument <i class="bi bi-box-arrow-down"></i> </i></figcaption>
                   </figure>
 
                       <figure class="px-lg-2 mb-5 ">
@@ -124,23 +137,26 @@
                           src="assets/images/cluster122.png" class="card-img-top card-img-bottom wp-post-image" alt="#"
                             sizes="100vw, 750px">
                           </a>
-                          <figcaption class=" text-center">Clusteropstelling</figcaption>
+                          <figcaption class=" text-center display-7">Clusteropstelling</figcaption>
                       </figure>
 
                       <br>
                       <figure class="px-lg-2 mb-5 ">
                           <img width="750" height="256"
-                          src="assets/images/pironman.webp" class="card-img-top card-img-bottom wp-post-image" alt="#"
+                          src="assets/images/pironman.webp" class="card-img-top card-img-bottom wp-post-image" alt="node"
                             sizes="100vw, 750px">
-                            <figcaption class=" text-center">Node</figcaption>
+                            <figcaption class=" text-center display-7">Node</figcaption>
                             <h4 class="text-body-emphasis fs-8 fw-bolder pt-3">De node's die voorzien zijn van:</h4>
-                            <ul class="h6 small lead list-unstyled">
+                            <ul class="display-7">
                               <li>Cool elementen</li>
                               <li>Raspberrypi 5</li>
                               <li>NVME M.2 SSD</li>
                               <li>USB HDMI Adapter</li>
                             </ul>
                       </figure>
+
+                      <hr class="featurette-divider">
+                      <br>
 
                       <figure class="px-lg-2 mb-5 ">
                         <a class="card shadow shadow-lg_hover border-gray-300"
@@ -149,7 +165,7 @@
                           src="assets/images/docker.webp" class="card-img-top card-img-bottom wp-post-image" alt="pagina met meeer uitleg over docker"
                             sizes="100vw, 750px">
                         </a>
-                        <figcaption class=" text-center">Meer over docker</figcaption>
+                        <figcaption class=" text-center display-7">Meer over docker</figcaption>
                       </figure>
 
                       <figure class="px-lg-2 mb-5 ">
@@ -159,7 +175,7 @@
                           src="https://www.combell.com/nl/blog/files/Kubernetes-3-750x256.jpg" class="card-img-top card-img-bottom wp-post-image" alt="pagina met meeer uitleg over kubernetes"
                             sizes="100vw, 750px">
                         </a>
-                        <figcaption class=" text-center">Meer over kubernetes</figcaption>
+                        <figcaption class=" text-center display-7">Meer over kubernetes</figcaption>
                       </figure>
                     </section>
           </aside>

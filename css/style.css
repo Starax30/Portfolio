@@ -50,4 +50,10 @@
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+#carouselExampleCaptions {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+
 

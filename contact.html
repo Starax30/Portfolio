@@ -65,27 +65,19 @@
                 </article>
     
                 <article>
-                    <form class="row g-3" netlify>
-                        <section class="col-md-6">
-                            <label for="name" class="form-label">Naam</label>
-                            <input type="text" class="form-control" id="name" placeholder="Naam" required>
-                        </section>
-                        <section class="col-md-6">
-                            <label for="email" class="form-label">E-mail</label>
-                            <input type="email" class="form-control" id="email" placeholder="E-mailadres" required>
-                        </section>
-                        <section class="col-12">
-                            <label for="subject" class="form-label">Onderwerp</label>
-                            <input type="text" class="form-control" id="subject" placeholder="Onderwerp van uw bericht" required>
-                        </section>
-                        <section>
-                            <label for="message" class="form-label col-12">Bericht</label>
-                            <textarea class="form-control" id="message" rows="4" placeholder="Schrijf hier uw bericht..." required></textarea>
-                          </section>
-                        <section class="col-12">
-                            <button type="submit" class="btn btn-primary">Verstuur bericht</button>
-                        </section>
-                    </form>
+                    <form name="contact" method="POST" data-netlify="true">
+                        <p>
+                          <label >Naam:</label>
+                          <input class="col-12 form-control" type="text" name="name" />
+                        </p>
+                        <p>
+                          <label >antwoord: </label>
+                          <textarea class="col-12 form-control" name="Schrijf hier uw keuze..."></textarea>
+                        </p>
+                        <p>
+                          <button type="submit" class="btn btn-primary">Verstuur</button>
+                        </p>
+                      </form>
                 </article>
             </section>
 

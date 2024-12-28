@@ -68,11 +68,15 @@
                     <form name="contact" method="POST" data-netlify="true">
                         <p>
                           <label >Naam:</label>
-                          <input class="col-12 form-control" type="text" name="name">
+                          <input class="col-12 form-control" type="text" name="name" required>
+                        </p>
+                        <p>
+                          <label >Onderwerp:</label>
+                          <input class="col-12 form-control" type="text" name="name" required>
                         </p>
                         <p>
                           <label >antwoord: </label>
-                          <textarea class="col-12 form-control" name="Schrijf hier uw keuze..."></textarea>
+                          <textarea class="col-12 form-control" name="Schrijf hier uw keuze..." required></textarea>
                         </p>
                         <p>
                           <button type="submit" class="btn btn-primary">Verstuur</button>

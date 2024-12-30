@@ -53,4 +53,7 @@
   overflow: hidden;
 }
 
+body{
+  background: linear-gradient(to bottom, #f0f8ff, #ffffff);
+}
 

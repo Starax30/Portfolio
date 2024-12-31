@@ -57,3 +57,52 @@ body{
   background: linear-gradient(to bottom, #f7faff, #ffffff);
 }
 
+.timeline {
+  position: relative;
+  padding-left: 2rem;
+  margin-top: 2rem;
+  border-left: 2px solid #dee2e6;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.timeline-badge {
+  position: absolute;
+  left: -11px;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #007bff;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-content {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  border: 1px solid #dee2e6;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-left: 1.5rem;
+}
+
+.timeline-content h5 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  color: #343a40;
+}
+
+.timeline-content p {
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+.timeline-content .text-muted {
+  font-size: 0.8rem;
+  color: #adb5bd;
+}

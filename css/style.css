@@ -127,3 +127,68 @@ body{
   color: white;
 }
 
+.timeline {
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.timeline-badge {
+  width: 20px;
+  height: 20px;
+  background-color: #007bff; /* Blauwe kleur */
+  border-radius: 50%;
+  position: absolute;
+  left: -10px;
+  top: 10px;
+  z-index: 1;
+}
+
+.timeline-content {
+  background: #f8f9fa;
+  border-radius: 5px;
+  padding: 15px;
+  margin-left: 40px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+
+.timeline-content h5 {
+
+  font-weight: bold;
+}
+
+.timeline-content p {
+  color: #343a40;
+  margin-bottom: 5px;
+}
+
+.timeline-content span {
+  color: #6c757d;
+  font-size: 0.9rem;
+}
+
+.timeline-content:hover {
+    /* Voor extra visuele feedback in CSS */
+    z-index: 10;
+    transform: scale(1.05); /* Zoom-in effect */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    background: #e9f7ff; /* Lichte blauwe kleur bij hover */
+}
+
+/* Animatie bij scrollen */
+.timeline-content.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+

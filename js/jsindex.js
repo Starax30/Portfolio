@@ -25,3 +25,42 @@ document.getElementById("year").textContent = currentYear;
         window.location.href = "https://www.google.com"; // Doorverwijzen naar een andere pagina
       }
     }
+    document.addEventListener("DOMContentLoaded", () => {
+      const timelineItems = document.querySelectorAll(".timeline-content");
+  
+      const revealItems = () => {
+        const windowHeight = window.innerHeight;
+        const windowTop = window.scrollY;
+        const windowBottom = windowTop + windowHeight;
+  
+        timelineItems.forEach((item) => {
+          const itemTop = item.getBoundingClientRect().top + windowTop;
+  
+          if (itemTop < windowBottom - 50) {
+            item.classList.add("visible");
+          }
+        });
+      };
+  
+      // Activeer animatie bij laden en scrollen
+      revealItems();
+      window.addEventListener("scroll", revealItems);
+    });
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const timelineItems = document.querySelectorAll(".timeline-content");
+  
+      timelineItems.forEach((item) => {
+        item.addEventListener("mouseenter", () => {
+          item.style.zIndex = "10"; // Breng het item naar voren
+          item.style.transform = "scale(1.1)"; // Zoom in
+          item.style.transition = "all 0.3s ease";
+        });
+  
+        item.addEventListener("mouseleave", () => {
+          item.style.zIndex = "1"; // Reset z-index
+          item.style.transform = "scale(1)"; // Terug naar normaal
+        });
+      });
+    });
+

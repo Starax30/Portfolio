@@ -45,7 +45,7 @@
 }
 
 .display-7{
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: 'Cambria', 'Cochin', Georgia, Times, 'Times New Roman', 'serif';
 }
 
 .carousel-item{
@@ -106,3 +106,24 @@ body{
   font-size: 0.8rem;
   color: #adb5bd;
 }
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.more-btn a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.more-btn:hover {
+  background-color: #007bff; /* Bootstrap primaire kleur */
+  color: white;
+}
+
+.more-btn a:hover {
+  color: white;
+}
+

@@ -187,5 +187,15 @@ body{
 
 .display{
   font-family: 'Cambria', 'Cochin', Georgia, Times, 'Times New Roman', 'serif';
+
 }
 
+.image-scale {
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Voeg een overgang toe voor schaling en schaduw */
+}
+
+/* Voeg de 'uitsteken' stijl toe bij hover */
+.image-scale:hover {
+  transform: scale(1.1); /* Vergroot de afbeelding met 10% */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Voeg een schaduw toe voor extra effect */
+}

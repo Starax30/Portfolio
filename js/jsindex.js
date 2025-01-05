@@ -67,29 +67,3 @@ document.getElementById("year").textContent = currentYear;
 
 
 
-
-
-    document.addEventListener("DOMContentLoaded", () => {
-      const elementsToAnimate = document.querySelectorAll(
-        ".display-7"
-      );
-    
-      const observerOptions = {
-        threshold: 0.2, // Element komt in zicht bij 20% zichtbaar oppervlak
-      };
-    
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("in-view");
-          } else {
-            entry.target.classList.remove("in-view");
-          }
-        });
-      }, observerOptions);
-    
-      elementsToAnimate.forEach((element) => observer.observe(element));
-    });
-    
-
-

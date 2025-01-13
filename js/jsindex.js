@@ -3,7 +3,7 @@ document.getElementById("year").textContent = currentYear;
 
 
     // Het juiste wachtwoord
-    const correctPassword = "letsgetpro";
+    const correctPassword = "letsgetproductive";
 
     // Controleer of de gebruiker al is geverifieerd
     const isVerified = localStorage.getItem("isVerified");

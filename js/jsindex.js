@@ -21,7 +21,6 @@ if (isVerified === "true") {
       // Als het wachtwoord juist is, sla op in sessionStorage en toon de inhoud
       sessionStorage.setItem("isVerified", "true");
       document.body.style.display = "block";
-      alert("Welkom op mijn infopagina!");
       break; // Verlaat de lus
     } else {
       // Wachtwoord onjuist, verhoog de teller en geef een melding

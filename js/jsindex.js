@@ -1,30 +1,45 @@
 const currentYear = new Date().getFullYear();
 document.getElementById("year").textContent = currentYear;
 
+// Het juiste wachtwoord
+const correctPassword = "letsgetproductive";
 
-    // Het juiste wachtwoord
-    const correctPassword = "letsgetproductive";
+// Controleer of de gebruiker al is geverifieerd in deze sessie
+const isVerified = sessionStorage.getItem("isVerified");
 
-    // Controleer of de gebruiker al is geverifieerd
-    const isVerified = localStorage.getItem("isVerified");
+if (isVerified === "true") {
+  // Als al geverifieerd in deze sessie, toon de inhoud direct
+  document.body.style.display = "block";
+} else {
+  let attempts = 0; // Teller voor pogingen
+  let userPassword = null;
 
-    if (isVerified === "true") {
-      // Als al geverifieerd, toon de inhoud direct
+  while (attempts < 2) {
+    userPassword = prompt("Voer het wachtwoord in:"); // Vraag het wachtwoord
+
+    if (userPassword === correctPassword) {
+      // Als het wachtwoord juist is, sla op in sessionStorage en toon de inhoud
+      sessionStorage.setItem("isVerified", "true");
       document.body.style.display = "block";
+      alert("Toegang verleend!");
+      break; // Verlaat de lus
     } else {
-      // Vraag de gebruiker om het wachtwoord
-      const userPassword = prompt("Voer het wachtwoord in:");
-
-      if (userPassword === correctPassword) {
-        // Als het wachtwoord juist is, sla op in localStorage en toon de inhoud
-        localStorage.setItem("isVerified", "true");
-        document.body.style.display = "block";
-      } else {
-        // Bij onjuist wachtwoord, geef een melding en sluit de pagina
-        alert("Onjuist wachtwoord. Toegang geweigerd.");
-        window.location.href = "https://www.google.com"; // Doorverwijzen naar een andere pagina
+      // Wachtwoord onjuist, verhoog de teller en geef een melding
+      attempts++;
+      if (attempts < 2) {
+        alert("Onjuist wachtwoord. Probeer het opnieuw.");
       }
     }
+  }
+
+  // Als de pogingen op zijn en het wachtwoord onjuist blijft
+  if (attempts === 2 && userPassword !== correctPassword) {
+    alert("Onjuist wachtwoord. Geen pogingen meer over. Toegang geweigerd.");
+    window.location.href = "https://www.google.com"; // Doorverwijzen naar een andere pagina
+  }
+}
+
+
     document.addEventListener("DOMContentLoaded", () => {
       const timelineItems = document.querySelectorAll(".timeline-content");
   

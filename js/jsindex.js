@@ -21,7 +21,7 @@ if (isVerified === "true") {
       // Als het wachtwoord juist is, sla op in sessionStorage en toon de inhoud
       sessionStorage.setItem("isVerified", "true");
       document.body.style.display = "block";
-      alert("Toegang verleend!");
+      alert("Welkom op mijn infopagina!");
       break; // Verlaat de lus
     } else {
       // Wachtwoord onjuist, verhoog de teller en geef een melding
@@ -34,7 +34,7 @@ if (isVerified === "true") {
 
   // Als de pogingen op zijn en het wachtwoord onjuist blijft
   if (attempts === 2 && userPassword !== correctPassword) {
-    alert("Onjuist wachtwoord. Geen pogingen meer over. Toegang geweigerd.");
+    alert("Onjuist wachtwoord. Toegang geweigerd.");
     window.location.href = "https://www.google.com"; // Doorverwijzen naar een andere pagina
   }
 }

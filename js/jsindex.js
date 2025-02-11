@@ -2,7 +2,7 @@ const currentYear = new Date().getFullYear();
 document.getElementById("year").textContent = currentYear;
 
 // Het juiste wachtwoord
-const correctPassword = "letsgetproductive";
+const correctPassword = "letsbeproductive";
 
 // Controleer of de gebruiker al is geverifieerd in deze sessie
 const isVerified = sessionStorage.getItem("isVerified");

@@ -15,7 +15,7 @@ if (isVerified === "true") {
   let userPassword = null;
 
   while (attempts < 2) {
-    userPassword = prompt("Voer het wachtwoord in:"); // Vraag het wachtwoord
+    userPassword = prompt("Voer het wachtwoord in (Terug te vinden op cv-website):"); // Vraag het wachtwoord
 
     if (userPassword === correctPassword) {
       // Als het wachtwoord juist is, sla op in sessionStorage en toon de inhoud

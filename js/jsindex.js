@@ -1,6 +1,6 @@
 const currentYear = new Date().getFullYear();
 document.getElementById("year").textContent = currentYear;
-
+/*
 // Het juiste wachtwoord
 const correctPassword = "letsbeproductive";
 
@@ -37,7 +37,7 @@ if (isVerified === "true") {
     window.location.href = "https://www.google.com"; // Doorverwijzen naar een andere pagina
   }
 }
-
+*/
 
     document.addEventListener("DOMContentLoaded", () => {
       const timelineItems = document.querySelectorAll(".timeline-content");
@@ -77,6 +77,7 @@ if (isVerified === "true") {
         });
       });
     });
+
 
 
 
